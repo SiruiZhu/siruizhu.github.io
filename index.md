@@ -9,7 +9,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ![Image](https://github.com/SiruiZhu/siruizhu.github.io/blob/master/Beijing%20house%20rent/style/images/output1.png)
 
 
-[About this story](siruizhu.github.io/Beijing house rent/)
+[About this story](https://siruizhu.github.io/Beijing%20house%20rent/)
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
