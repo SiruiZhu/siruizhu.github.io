@@ -6,6 +6,8 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Markdown
 
+![Image](https://github.com/SiruiZhu/siruizhu.github.io/blob/master/Beijing%20house%20rent/style/images/output1.png)
+
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
