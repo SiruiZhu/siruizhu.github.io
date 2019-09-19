@@ -196,6 +196,17 @@ input, select, textarea {
 			margin: 3em 0;
 		}
 
+		hr.separator {
+			border-bottom: 1px solid #000;
+			width: 80px;
+			margin-bottom: 20px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+
+
 	blockquote {
 		border-left: solid 4px rgba(144, 144, 144, 0.5);
 		font-style: italic;
@@ -2830,7 +2841,7 @@ input, select, textarea {
 /* Main */
 
 	.main {
-		padding: 6em 0 4em 0 ;
+		padding: 4em 0 1em 0 ;
 	}
 
 		.main.style1 {
