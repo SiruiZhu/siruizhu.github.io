@@ -1142,7 +1142,7 @@
 		}
 
 		.inner {
-			@include vendor('transition', ('transform 1.5s ease', 'opacity 2s ease'));
+			@include vendor('transition', ('transform 1s ease', 'opacity 1.5s ease'));
 			@include vendor('transition-delay', '0.25s');
 			@include vendor('transform', 'scale(1)');
 			opacity: 1;

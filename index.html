@@ -65,11 +65,11 @@
 							<header class="major">
 								<h2>ABOUT ME</h2>
 							</header>
-							<p>I'm a data visualization editor at <a href="https://www.cgtn.com/clab/data-visualization">CGTN</a>, and a freelance visualization designer. Previously I was an intern at <a href="https://graphics.reuters.com/"><em>Reuters Graphics</a></em>, and I was a data journalism student at <a href="http://ledeprogram.com/"><em>Columbia Journalism School</a></em>. I have a BA and MA journalism background. I'm enjoying doing data storytelling and visualization. <br>
+							<p>I'm a data visualization editor at <a href="https://www.cgtn.com/clab/data-visualization"><em>CGTN</em></a>, and a freelance viz developer. Previously I was an intern at <a href="https://graphics.reuters.com/"><em>Reuters Graphics</a></em>, and I was a data journalism student at <a href="http://ledeprogram.com/"><em>Columbia Journalism School</a></em>. I have a BA and MA journalism background. I'm enjoying doing data storytelling and visualization. <br>
 							<br>
 							Previously I have worked as TV Producer and Training Supervisor at <a href="http://dydata.io/"><em>Dyclub Data Journalism Research Center.</em></a>
 							<br><br>
-							Here shows my works at Reuters and during the Lede program.
+							Here shows my works.
 							</p>
 						</div>
 						<div class="col-6 col-12-medium imp-medium">
@@ -87,6 +87,22 @@
 					</header>
 					<p>Tools: JavaScript, D3.js, QGIS, Illustrator, After Effects, Python, Pandas, Matplotlib, Selenium, BeautifulSoup, Leaflet, Mapbox</p>	
 				<div class="row gtr-150">
+            <div class="col-4 col-12-medium">
+              <img class="image fit" src="images/gif/mars.gif" alt="..." onclick="window.open('images/gif/mars.gif', '_blank');" />
+              <p><a href="https://news.cgtn.com/event/2021/tianwen1-to-mars/index.html">Tianwen1 to mars</a></p>
+            </div>
+            <div class="col-4 col-12-medium">
+              <img class="image fit" src="images/gif/mars-map.gif" alt="..." onclick="window.open('images/gif/mars-map.gif', '_blank');" />
+              <p><a href="https://kontinentalist.com/stories/a-cultural-history-of-han-chinese-names-for-girls-and-boys-in-china">Tianwen1 to mars</a></p>
+            </div>
+            <div class="col-4 col-12-medium">
+              <img class="image fit" src="images/gif/name.gif" alt="..." onclick="window.open('images/gif/name.gif', '_blank');" />
+              <p><a href="https://kontinentalist.com/stories/a-cultural-history-of-han-chinese-names-for-girls-and-boys-in-china">What can we tell from the evolution of Han Chinese names? </a></p>
+            </div>
+            <div class="col-4 col-12-medium">
+              <img class="image fit" src="images/gif/text-wall.gif" alt="..." onclick="window.open('images/gif/name.gif', '_blank');" />
+              <p><a href="https://news.cgtn.com/event/2021/tianwen1-to-mars/index.html">What can we tell from the evolution of Han Chinese names?</a></p>
+            </div>
 						<div class="col-4 col-12-medium">
 							<img class="image fit" src="images/static/wuhan.png" alt="..." onclick="window.open('images/static/wuhan.png', '_blank');" />
 							<p><a href="http://graphics.thomsonreuters.com/testfiles/reopening-wuhan/index.html">Reopening a megacity (contributor)</a></p>
@@ -802,7 +818,7 @@
 					<ul class="actions special">
 						<li><a href="assets/files/SiruiZhu_resume2020.pdf" class="button wide primary">RESUME</a></li>
 					</ul>
-					<li>&copy; SIRUI ZHU 2019</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; SIRUI ZHU 2021</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					<button onclick="topFunction()" id="myBtn" title="Go to top" class="button wide top">Back to top</button>
 				</ul>
 			</section>
@@ -815,70 +831,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-		<!-- Scripts 'back to top' -->
-			<script>
-			// When the user scrolls down 20px from the top of the document, show the button
-			window.onscroll = function() {scrollFunction()};
-
-			function scrollFunction() {
-			    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-			        document.getElementById("myBtn").style.display = "block";
-			    } else {
-			        document.getElementById("myBtn").style.display = "none";
-			    }
-			}
-
-			// When the user clicks on the button, scroll to the top of the document
-			function topFunction() {
-			    document.body.scrollTop = 0;
-			    document.documentElement.scrollTop = 0;
-			}
-
- var imgs = document.querySelectorAll('img');
-
-        //用来判断bound.top<=clientHeight的函数，返回一个bool值
-        function isIn(el) {
-            var bound = el.getBoundingClientRect();
-            var clientHeight = window.innerHeight;
-            return bound.top <= clientHeight;
-        } 
-        //检查图片是否在可视区内，如果不在，则加载
-        function check() {
-            Array.from(imgs).forEach(function(el){
-                if(isIn(el)){
-                    loadImg(el);
-                }
-            })
-        }
-        function loadImg(el) {
-            if(!el.src){
-                var source = el.dataset.src;
-                el.src = source;
-            }
-        }
-        // //offsetTop是元素与offsetParent的距离，循环获取直到页面顶部
-        // function getTop(e) {
-        //     var T = e.offsetTop;
-        //     while(e = e.offsetParent) {
-        //         T += e.offsetTop;
-        //     }
-        //     return T;
-        // }
-
-        // function lazyLoad(imgs) {
-        //     var H = document.documentElement.clientHeight;//获取可视区域高度
-        //     var S = document.documentElement.scrollTop || document.body.scrollTop;
-        //     for (var i = 0; i < imgs.length; i++) {
-        //         if (H + S > getTop(imgs[i])) {
-        //             imgs[i].src = imgs[i].getAttribute('data-src');
-        //         }
-        //     }
-        // }
-
-        window.onload = window.onscroll = function () { //onscroll()在滚动条滚动的时候触发
-            check();
-        }
-			</script>
 	</body>
 </html>
